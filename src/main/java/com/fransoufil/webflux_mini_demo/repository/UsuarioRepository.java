@@ -7,4 +7,6 @@ import reactor.core.publisher.Flux;
 public interface UsuarioRepository extends ReactiveCrudRepository<Usuario, Long> {
 
     Flux<Usuario> findByNomeContains(String nome);
+
+    Flux<Usuario> findByEmailContains(String email);
 }
