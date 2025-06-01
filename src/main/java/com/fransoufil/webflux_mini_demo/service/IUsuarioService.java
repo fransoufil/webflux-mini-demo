@@ -6,10 +6,10 @@ import reactor.core.publisher.Mono;
 
 public interface IUsuarioService {
 
-    public Mono<Usuario> buscarPorId(Long id);
+    Mono<Usuario> buscarPorId(Long id);
 
-    public Flux<Usuario> listarComFlatMap();
+    Flux<Usuario> listarComFlatMap();
 
-    public Flux<Usuario> listarComConcatMap();
+    Flux<Usuario> listarComConcatMap();
 
 }
