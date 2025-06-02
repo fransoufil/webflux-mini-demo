@@ -6,6 +6,6 @@ import reactor.core.publisher.Mono;
 
 public interface IAuditoriaService {
 
-    public Mono<LogAcesso> registrarAcesso(Usuario usuario);
+    Mono<LogAcesso> registrarAcesso(Usuario usuario);
 
 }
