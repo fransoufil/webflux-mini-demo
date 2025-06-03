@@ -1,8 +1,8 @@
 package com.fransoufil.webflux_mini_demo.controller;
 
 import com.fransoufil.webflux_mini_demo.model.Usuario;
-import com.fransoufil.webflux_mini_demo.service.AuditoriaService;
-import com.fransoufil.webflux_mini_demo.service.UsuarioService;
+import com.fransoufil.webflux_mini_demo.service.impl.AuditoriaService;
+import com.fransoufil.webflux_mini_demo.service.impl.UsuarioService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

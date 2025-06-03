@@ -1,4 +1,4 @@
-package com.fransoufil.webflux_mini_demo.service;
+package com.fransoufil.webflux_mini_demo.service.impl;
 
 import com.fransoufil.webflux_mini_demo.model.LogAcesso;
 import com.fransoufil.webflux_mini_demo.model.Usuario;

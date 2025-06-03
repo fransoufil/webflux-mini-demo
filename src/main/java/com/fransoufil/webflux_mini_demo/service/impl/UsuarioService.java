@@ -1,7 +1,8 @@
-package com.fransoufil.webflux_mini_demo.service;
+package com.fransoufil.webflux_mini_demo.service.impl;
 
 import com.fransoufil.webflux_mini_demo.model.Usuario;
 import com.fransoufil.webflux_mini_demo.repository.UsuarioRepository;
+import com.fransoufil.webflux_mini_demo.service.IUsuarioService;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
