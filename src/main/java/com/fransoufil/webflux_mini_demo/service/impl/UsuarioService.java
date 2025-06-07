@@ -34,5 +34,10 @@ public class UsuarioService implements IUsuarioService {
                 .concatMap(nome -> Mono.just(new Usuario(null, nome, nome + "@email.com"))
                         .delayElement(Duration.ofMillis(100))); // Simula tarefa sequencial
     }
+
+    @Override
+    public Mono<Usuario> buscarPorNome(String nome) {
+        return null;
+    }
 }
 
