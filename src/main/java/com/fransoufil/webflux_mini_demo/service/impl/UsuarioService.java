@@ -35,9 +35,5 @@ public class UsuarioService implements IUsuarioService {
                         .delayElement(Duration.ofMillis(100))); // Simula tarefa sequencial
     }
 
-    @Override
-    public Mono<Usuario> buscarPorNome(String nome) {
-        return null;
-    }
 }
 

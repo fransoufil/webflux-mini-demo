@@ -12,6 +12,6 @@ public interface IUsuarioService {
 
     Flux<Usuario> listarComConcatMap();
 
-    Mono<Usuario> buscarPorNome(String nome);
+    Flux<Usuario> buscarPorNome(String nome);
 
 }
