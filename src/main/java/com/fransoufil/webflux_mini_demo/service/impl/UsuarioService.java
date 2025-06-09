@@ -35,5 +35,10 @@ public class UsuarioService implements IUsuarioService {
                         .delayElement(Duration.ofMillis(100))); // Simula tarefa sequencial
     }
 
+    @Override
+    public Flux<Usuario> buscarPorNome(String nome) {
+        return null;
+    }
+
 }
 
