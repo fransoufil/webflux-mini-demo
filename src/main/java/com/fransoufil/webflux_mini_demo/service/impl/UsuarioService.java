@@ -37,7 +37,7 @@ public class UsuarioService implements IUsuarioService {
 
     @Override
     public Flux<Usuario> buscarPorNome(String nome) {
-        return null;
+        return repo.findByNomeContains(nome);
     }
 
 }
