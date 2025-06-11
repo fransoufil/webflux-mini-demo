@@ -39,4 +39,10 @@ public class UsuarioController {
     public Flux<Usuario> listarComConcatMap() {
         return usuarioService.listarComConcatMap();
     }
+
+    @GetMapping("/buscar/{nome}")
+    public Flux<Usuario> buscarPorNome(@PathVariable String nome) {
+        return usuarioService.buscarPorNome(nome);
+    }
+
 }
