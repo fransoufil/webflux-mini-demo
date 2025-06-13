@@ -18,7 +18,7 @@ public class UsuarioService implements IUsuarioService {
         this.repo = repo;
     }
 
-    public Mono<Usuario> buscarPorId(Long id) {
+    public Mono<Usuario> findById(Long id) {
         return repo.findById(id)
                 .switchIfEmpty(Mono.error(new RuntimeException("Usuário não encontrado")));
     }

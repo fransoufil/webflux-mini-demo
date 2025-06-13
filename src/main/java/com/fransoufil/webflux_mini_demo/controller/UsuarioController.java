@@ -24,7 +24,7 @@ public class UsuarioController {
 
     @GetMapping("/{id}/acesso")
     public Mono<String> acessar(@PathVariable Long id) {
-        return usuarioService.buscarPorId(id)
+        return usuarioService.findById(id)
                 .flatMap(auditoriaService::registrarAcesso)
                 //.flatMap(usuario -> auditoriaService.registrarAcesso(usuario))
                 .map(log -> "Acesso registrado em: " + log.getDataHora());

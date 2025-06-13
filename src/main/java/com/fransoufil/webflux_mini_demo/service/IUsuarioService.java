@@ -6,7 +6,7 @@ import reactor.core.publisher.Mono;
 
 public interface IUsuarioService {
 
-    Mono<Usuario> buscarPorId(Long id);
+    Mono<Usuario> findById(Long id);
 
     Flux<Usuario> listarComFlatMap();
 
