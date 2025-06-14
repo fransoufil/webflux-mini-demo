@@ -12,7 +12,7 @@ public interface IUsuarioService {
 
     Flux<Usuario> listarComConcatMap();
 
-    Flux<Usuario> buscarPorNome(String nome);
+    Flux<Usuario> findByNome(String nome);
 
     Mono<Usuario> findByEmail(String email);
 
