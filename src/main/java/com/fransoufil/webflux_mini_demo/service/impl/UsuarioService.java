@@ -36,8 +36,13 @@ public class UsuarioService implements IUsuarioService {
     }
 
     @Override
-    public Flux<Usuario> buscarPorNome(String nome) {
+    public Flux<Usuario> findByNome(String nome) {
         return repo.findByNomeContains(nome);
+    }
+
+    @Override
+    public Mono<Usuario> findByEmail(String email) {
+        return null;
     }
 
 }
