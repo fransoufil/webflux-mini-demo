@@ -14,6 +14,6 @@ public interface IUsuarioService {
 
     Flux<Usuario> findByNome(String nome);
 
-    Mono<Usuario> findByEmail(String email);
+    Flux<Usuario> findByEmail(String email);
 
 }
