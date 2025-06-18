@@ -41,7 +41,7 @@ public class UsuarioController {
     }
 
     @GetMapping("/buscar/{nome}")
-    public Flux<Usuario> buscarPorNome(@PathVariable String nome) {
+    public Flux<Usuario> findByNome(@PathVariable String nome) {
         return usuarioService.findByNome(nome);
     }
 
